@@ -17,4 +17,3 @@
 * [SMTP](https://docs.python.org/3/library/smtplib.html)
 * OpenAI??
 * Pandas
-* 
