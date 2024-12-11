@@ -16,3 +16,20 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
             print(f"Email sent successfully to {recipient_email}")
     except Exception as e:
         print(f"Error sending email to {recipient_email}: {e}")
+
+if __name__ == "__main__":
+    sender_email = ""
+    sender_password = ""
+
+    subject =""
+    body = ""
+
+    email_list = "emails.txt"
+    recipient_emails = read_emails_from_file(email-address-list)
+
+    if recipient_emails:
+        send_email(sender_email, sender_password, recipient, subject, body)
+    else:
+        print("No more recipients found.")
+
+    
