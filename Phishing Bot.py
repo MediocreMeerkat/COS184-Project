@@ -10,9 +10,9 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
         msg.set_content(body)
 
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
-            server.starttls()  # Secure the connection
+            server.starttls() 
             server.login(sender_email, sender_password)
-            server.send_message(msg)  # Send the email
+            server.send_message(msg)
             print(f"Email sent successfully to {recipient_email}")
     except Exception as e:
         print(f"Error sending email to {recipient_email}: {e}")
