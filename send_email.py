@@ -21,8 +21,8 @@ if __name__ == "__main__":
     sender_email = ""
     sender_password = ""
 
-    subject =""
-    body = ""
+    subject ="Important Notice: Account Suspended Due to Unusual Activity"
+    body = "Hello, faithful FakeBank customer. We have detected unusual activity on your account and have temporarily suspended access to protect your information. Immediate Action is required to restore your account. "
 
     email_list = "emails.txt"
     recipient_emails = read_emails_from_file(email-address-list)
