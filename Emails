@@ -37,3 +37,8 @@ We have detected unusual activity on your account and have temporarily suspended
 We have detected numerous failed login attempts from around the globe and have deduced that your account information has been compromised. To restore access to your account, please reply to this email with your social security number, date of birth, and mother's maiden name. After this information is provided, we can restore your account. Please provide this information in a timely fashion. 
 
 Thank you, The staff at FakeBank LLC."
+
+def get_random_email():
+    emails = [Email_1, Email_2, Email_3]
+    body = random.choice(emails)
+    return body
