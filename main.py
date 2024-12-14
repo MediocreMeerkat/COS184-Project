@@ -32,7 +32,7 @@ while True:
 
 #need code to decide which email to send off
 subject = "Urgent action needed!"
-body = 
+body = get_random_email():
 
 for item in receivers:
     send_email(sender, password, item, subject, body)
