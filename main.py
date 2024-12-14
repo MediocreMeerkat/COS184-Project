@@ -2,6 +2,7 @@ from os import read
 from read_emails_from_file import read_emails_from_file
 from send_email import send_email
 from getpass import getpass
+import random
 
 
 while True:
@@ -30,8 +31,8 @@ while True:
     break
 
 #need code to decide which email to send off
-subject = "hello"
-body = "hello"
+subject = "Urgent action needed!"
+body = 
 
 for item in receivers:
     send_email(sender, password, item, subject, body)
