@@ -1,5 +1,6 @@
 import smtplib
 from email.message import EmailMessage
+from read_emails_from_file import read_emails_from_file
 
 def send_email(sender_email, sender_password, recipient_email, subject, body):
     try:
@@ -25,10 +26,10 @@ if __name__ == "__main__":
     body = ""
 
     email_list = "emails.txt"
-    recipient_emails = read_emails_from_file(email-address-list)
+    recipient_emails = read_emails_from_file("email-address-list")
 
     if recipient_emails:
-        send_email(sender_email, sender_password, recipient, subject, body)
+        send_email(sender_email, sender_password, recipient_emails, subject, body)
     else:
         print("No more recipients found.")
 
