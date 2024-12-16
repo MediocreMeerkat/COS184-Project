@@ -31,7 +31,6 @@ while True:
         continue
     break
 
-#need code to decide which email to send off
 subject = "Urgent action needed!"
 body = get_random_email()
 
